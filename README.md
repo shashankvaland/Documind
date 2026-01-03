@@ -45,5 +45,6 @@ The core objective of DocuMind is to solve the "hallucination" problem in standa
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Shashankv21/DocuMind.git](https://github.com/shashankvaland/DocuMind.git)
+   git clone [https://github.com/Shashankv21/DocuMind.git](https://github.com/shashankvaland/Documind.git)
    cd DocuMind
+
