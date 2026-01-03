@@ -1,0 +1,64 @@
+from typing import Dict, List
+from src.llm_handler import LLMHandler
+from src.vector_store import VectorStore
+
+class RAGComparison:
+    """ Compare answers with and without RAG"
+    
+    def __init__(self, llm_handler: LLMHandler, vector_store: VectorStore):
+        self.llm_handler = llm_handler
+        self.vector_store = vector_store
+    
+    def get_answer_without_rag(self, query: str) -> Dict:
+        """
+        Answer WITHOUT looking at documents
+        Simulates what a regular LLM would say
+        """
+        answer = f"""🤔 **Without RAG (No Document Context):**
+
+I don't have access to your specific documents, so I can only provide general information about "{query}".
+
+To answer this question accurately, I would need to:
+- Access the actual documents you've uploaded
+- Read the relevant sections
+- Provide specific information from those documents
+
+This demonstrates why RAG (Retrieval Augmented Generation) is important - it grounds responses in your actual data rather than general knowledge.
+
+💡 *See the "With RAG" answer below for document-specific information!*
+"""
+        
+        return {
+            "success": True,
+            "answer": answer,
+            "sources": []
+        }
+    
+    def get_answer_with_rag(self, query: str) -> Dict:
+        """
+        Answer WITH RAG (using your documents)
+        """
+        # Search documents
+        relevant_chunks = self.vector_store.search(query, top_k=3)
+        
+        # Generate answer
+        result = self.llm_handler.generate_answer(query, relevant_chunks)
+        
+        # Add RAG indicator
+        if result["success"]:
+            result["answer"] = f"📚 **With RAG (Using Your Documents):**\n\n{result['answer']}"
+        
+        return result
+    
+    def compare_answers(self, query: str) -> Dict:
+        """
+        Get both answers for comparison
+        """
+        without_rag = self.get_answer_without_rag(query)
+        with_rag = self.get_answer_with_rag(query)
+        
+        return {
+            "query": query,
+            "without_rag": without_rag,
+            "with_rag": with_rag
+        }
