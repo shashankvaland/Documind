@@ -1,7 +1,7 @@
 # DocuMind: Intelligent Document Query System 📄🧠
 **LLM-Powered Document Intelligence for Instant Insights**
 
-DocuMind is an end-to-end **RAG (Retrieval-Augmented Generation)** system designed to eliminate information overload. It transforms static, unstructured PDFs into interactive knowledge bases, allowing users to have natural language conversations with their data to extract precise, context-aware insights.
+DocuMind is an end-to-end **RAG (Retrieval-Augmented Generation)** system designed to eliminate information overload. It transforms static, unstructured PDFs into interactive knowledge bases, enabling users to engage in natural language conversations with their data and extract precise, context-aware insights.
 
 ---
 
@@ -45,6 +45,7 @@ The core objective of DocuMind is to solve the "hallucination" problem in standa
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Shashankv21/DocuMind.git](https://github.com/shashankvaland/Documind.git)
-   cd DocuMind
+   git clone [https://github.com/shashankvaland/Documind.git](https://github.com/shashankvaland/Documind.git)
+   cd Documind
+
 
