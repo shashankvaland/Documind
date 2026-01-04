@@ -7,11 +7,11 @@ A production-ready Retrieval-Augmented Generation (RAG) system that enables inte
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-0.4.22-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## 🎯 Project Overview
+## Project Overview
 
 DocuMind transforms how users interact with document collections by implementing a sophisticated RAG pipeline that combines semantic search with contextual AI responses. Unlike traditional keyword search, this system understands the meaning and context of queries to deliver accurate, source-cited answers.
 
-## ✨ Key Features
+##  Key Features
 
 ### Core Functionality
 - **Semantic Document Search**: Advanced embedding-based retrieval using sentence transformers
@@ -27,7 +27,7 @@ DocuMind transforms how users interact with document collections by implementing
 - **Performance Tracking**: Real-time metrics for response time and retrieval quality
 - **Export Capabilities**: Save conversations in Markdown and JSON formats
 
-## 🏗️ System Architecture
+##  System Architecture
 ```
 ┌─────────────────┐
 │  PDF Documents  │
@@ -69,7 +69,7 @@ DocuMind transforms how users interact with document collections by implementing
 └─────────────────────────────┘
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 ```bash
@@ -114,7 +114,7 @@ streamlit run app.py
 
 The application will open in your browser at `http://localhost:8501`
 
-## 📖 Usage Guide
+##  Usage Guide
 
 ### Basic Workflow
 
@@ -140,11 +140,11 @@ The application will open in your browser at `http://localhost:8501`
 - View response times, query history, and retrieval statistics
 
 **Export Conversations**
-- Go to "Settings" tab
+- Go to the "Settings" tab
 - Export chat history as Markdown or JSON
 - Include performance metrics in exports
 
-## 🛠️ Technical Implementation
+##  Technical Implementation
 
 ### Document Processing Pipeline
 ```python
@@ -192,7 +192,7 @@ LLMHandler()
   └── Context-aware prompting
 ```
 
-## 📊 Performance Metrics
+##  Performance Metrics
 
 The system tracks and displays:
 - **Response Time**: End-to-end query processing
@@ -200,7 +200,7 @@ The system tracks and displays:
 - **Source Attribution**: Documents referenced
 - **Query History**: Recent queries with timestamps
 
-## 🎓 Educational Value
+##  Educational Value
 
 This project demonstrates proficiency in:
 
@@ -222,7 +222,7 @@ This project demonstrates proficiency in:
 - Configuration handling
 - Metrics tracking
 
-## 🔧 Configuration
+##  Configuration
 
 Key settings in `src/config.py`:
 ```python
@@ -233,7 +233,7 @@ TOP_K_RESULTS = 3           # Chunks to retrieve
 LLM_MODEL = "gpt-3.5-turbo" # OpenAI model
 ```
 
-## 📁 Project Structure
+##  Project Structure
 ```
 documind/
 ├── app.py                      # Main Streamlit application
@@ -254,7 +254,7 @@ documind/
 └── README.md                  # This file
 ```
 
-## 🚧 Future Enhancements
+##  Future Enhancements
 
 - [ ] Multi-language document support
 - [ ] Advanced filtering and metadata search
@@ -265,22 +265,22 @@ documind/
 - [ ] Docker containerization
 - [ ] Cloud deployment (AWS/Azure/GCP)
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👨‍💻 Author
+##  Author
 
 **Your Name**
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-profile)
-- GitHub: [your-github](https://github.com/your-username)
-- Email: your.email@example.com
+- LinkedIn: [ShashankValand](https://www.linkedin.com/in/shashank-valand-725a93204/)
+- GitHub: [shashankvaland](https://github.com/shashankvaland)
+- Email: shashanksvaland@gmail.com
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Streamlit** for the intuitive web framework
 - **ChromaDB** for efficient vector storage
@@ -288,7 +288,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **OpenAI** for LLM capabilities
 - **LangChain** community for RAG inspiration
 
-## 📚 References
+##  References
 
 - [Retrieval-Augmented Generation (RAG) Paper](https://arxiv.org/abs/2005.11401)
 - [Sentence-BERT Paper](https://arxiv.org/abs/1908.10084)
@@ -297,4 +297,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**⭐ If you find this project useful, please consider giving it a star!**
+** If you find this project useful, please consider giving it a star!**
+
